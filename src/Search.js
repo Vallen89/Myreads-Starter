@@ -64,7 +64,7 @@ state= {
         </div>
         <div className="search-books-results">
           <h2 className="bookshelf-title">None</h2>
-          <Bookshelf books={this.state.books} shelf={'none'} onSearch={this.onSearch} onMoveBooks={this.props.onMoveBooks} />
+          <Bookshelf books={this.state.books} shelf="none" onSearch={this.onSearch} onMoveBooks={this.props.onMoveBooks} />
           <h2 className="bookshelf-title">Currently Reading</h2>
           <Bookshelf books={this.state.books} shelf={'currentlyReading'} onMoveBooks={this.props.onMoveBooks}/>
           <h2 className="bookshelf-title">Want to Read</h2>

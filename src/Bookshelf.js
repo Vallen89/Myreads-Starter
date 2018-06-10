@@ -3,12 +3,12 @@ import Book from './Book'
 
 class Bookshelf extends Component {
   render() {
-    let {shelf} = this.props;
+    let { shelf, onMoveBooks, books } = this.props;
     return (
         <div className="bookshelf-books">
           <ol className="books-grid">
-          {this.props.books.filter(b => b.shelf === shelf).map((b) => (
-          <Book onMoveBooks={this.props.onMoveBooks} b={b} key={b.id}/>
+          {books.filter(b => b.shelf === shelf).map((b) => (
+          <Book onMoveBooks={onMoveBooks} b={b} key={b.id}/>
           ))}
           </ol>
         </div>
